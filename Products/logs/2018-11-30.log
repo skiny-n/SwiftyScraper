@@ -1,0 +1,87 @@
+
+==== START of session ====
+2018-11-30 10:52:23 +0100 💬 [FileProvider.swift:61] Loaded configuration at /Users/skiny/Google Drive/Diplomka/Code/Products/Resources/configuration.json: ScrapingConfiguration(workerLimit: 1, workerRequestLimit: 10, depthLimit: 0, urlCountLimit: 25, proxyListPath: Optional("./Resources/proxies.json"), userAgentListPath: Optional("./Resources/user_agents.json"), refererListPath: Optional("./Resources/referers.json"), urlFilter: SwiftyScraper.ScrapingConfiguration.URLFilter(excludeURLTemplates: []), ignoreRobotsTXT: true, ignoreSiteMap: true, requestDelay: 1.0, requestTimeout: 60.0, requestThrottling: false, urlRetriesLimit: 3, authentication: nil, cookies: nil)
+2018-11-30 10:52:23 +0100 📋 [RequestWorkerCoordinator.swift:140] Creating a new request worker
+2018-11-30 10:52:23 +0100 💬 [Engine.swift:81] Starting crawling...
+2018-11-30 10:52:23 +0100 📋 [FrontierCoordinator.swift:73] Adding 1 entries to the queue 
+https://weather.codes/search/?q=Prague
+2018-11-30 10:52:23 +0100 📋 [RequestWorker.swift:72] Starting worker with delay 3.105 for https://weather.codes/search/?q=Prague
+2018-11-30 10:52:26 +0100 📋 [NetworkTask.swift:165] Networking: Data task started 
+[Custom info: <__NSCFLocalDataTask: 0x7ff642204070>{ taskIdentifier: 1 } { running }]
+2018-11-30 10:52:26 +0100 📋 [NetworkClient.swift:179] Networking: Task added. Total count: 1
+2018-11-30 10:52:26 +0100 💬 [RequestWorker.swift:177] Fetching entry https://weather.codes/search/?q=Prague
+2018-11-30 10:52:26 +0100 📋 [RequestWorker.swift:171] Did receive redirect from https://weather.codes/search/?q=Prague to https://weather.codes/search/?q=prague
+2018-11-30 10:52:26 +0100 📋 [NetworkClient.swift:331] Networking: Data task finished 
+[Custom info: success(value: Optional(41361 bytes), task: <__NSCFLocalDataTask: 0x7ff642204070>{ taskIdentifier: 1 } { completed })]
+2018-11-30 10:52:26 +0100 📋 [RequestWorker.swift:182] Initial response processing for entry https://weather.codes/search/?q=Prague
+2018-11-30 10:52:26 +0100 💬 [RequestWorker.swift:225] Finishing entry https://weather.codes/search/?q=Prague with result continue response 200
+2018-11-30 10:52:26 +0100 📋 [FrontierCoordinator.swift:84] Persisting 1 history entries: 
+https://weather.codes/search/?q=Prague
+2018-11-30 10:52:26 +0100 📋 [Engine.swift:286] Routing https://weather.codes/search/?q=Prague to pipelines
+2018-11-30 10:52:29 +0100 💬 [CityCodeScraper.swift:86] Found code EZXX0012 for city Prague, Czech Republic -> scraping weather info...
+2018-11-30 10:52:29 +0100 📋 [FrontierCoordinator.swift:73] Adding 1 entries to the queue 
+https://weather.com/weather/hourbyhour/l/EZXX0012
+2018-11-30 10:52:29 +0100 📋 [RequestWorker.swift:72] Starting worker with delay 2.8 for https://weather.com/weather/hourbyhour/l/EZXX0012
+2018-11-30 10:52:29 +0100 📋 [NetworkClient.swift:163] Networking: Task removed. Total count: 0
+2018-11-30 10:52:32 +0100 📋 [NetworkTask.swift:165] Networking: Data task started 
+[Custom info: <__NSCFLocalDataTask: 0x7ff64222c440>{ taskIdentifier: 2 } { running }]
+2018-11-30 10:52:32 +0100 📋 [NetworkClient.swift:179] Networking: Task added. Total count: 1
+2018-11-30 10:52:32 +0100 💬 [RequestWorker.swift:177] Fetching entry https://weather.com/weather/hourbyhour/l/EZXX0012
+2018-11-30 10:52:37 +0100 📋 [NetworkClient.swift:331] Networking: Data task finished 
+[Custom info: success(value: Optional(390388 bytes), task: <__NSCFLocalDataTask: 0x7ff64222c440>{ taskIdentifier: 2 } { completed })]
+2018-11-30 10:52:37 +0100 📋 [RequestWorker.swift:182] Initial response processing for entry https://weather.com/weather/hourbyhour/l/EZXX0012
+2018-11-30 10:52:37 +0100 💬 [RequestWorker.swift:225] Finishing entry https://weather.com/weather/hourbyhour/l/EZXX0012 with result continue response 200
+2018-11-30 10:52:37 +0100 📋 [FrontierCoordinator.swift:84] Persisting 1 history entries: 
+https://weather.com/weather/hourbyhour/l/EZXX0012
+2018-11-30 10:52:37 +0100 📋 [Engine.swift:286] Routing https://weather.com/weather/hourbyhour/l/EZXX0012 to pipelines
+2018-11-30 10:52:38 +0100 💬 [HourlyForecastScraper.swift:60] Weater forecast:
+Date	|	Description	|	Temperature	|	Feels like	|	Precipitation	|	Humidity	|	Wind speed
+11:00 Fri (30. Nov)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+12:00 Fri (30. Nov)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+13:00 Fri (30. Nov)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+14:00 Fri (30. Nov)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+15:00 Fri (30. Nov)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+16:00 Fri (30. Nov)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+17:00 Fri (30. Nov)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+18:00 Fri (30. Nov)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+19:00 Fri (30. Nov)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+20:00 Fri (30. Nov)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+21:00 Fri (30. Nov)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+22:00 Fri (30. Nov)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+23:00 Fri (30. Nov)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+00:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+01:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+02:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+03:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+04:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+05:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+06:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+07:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+08:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+09:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+10:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+11:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+12:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+13:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+14:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+15:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+16:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+17:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+18:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+19:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+20:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+21:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+22:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+23:00 Sat (01. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+00:00 Sun (02. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+01:00 Sun (02. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+02:00 Sun (02. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+03:00 Sun (02. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+04:00 Sun (02. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+05:00 Sun (02. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+06:00 Sun (02. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+07:00 Sun (02. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+08:00 Sun (02. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+09:00 Sun (02. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+10:00 Sun (02. Dec)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)	|	(censored)
+

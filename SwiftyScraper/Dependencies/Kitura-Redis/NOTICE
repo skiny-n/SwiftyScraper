@@ -1,0 +1,10 @@
+// NOTICE
+// Stanislav Novacek
+
+Source code for this software has been downloaded from https://github.com/IBM-Swift/Kitura-redis and copy-pasted with all files, including LICENCE, to a created Xcode project directory.
+Midifications made:
+- RedisResp.swift:17
+    (-) import Socket
+    (+) import BlueSocket
+
+// END NOTICE

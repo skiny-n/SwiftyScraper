@@ -1,0 +1,6 @@
+{
+    "agents": [
+//        "Mozilla/5.0 ..."
+        "WeatherFetcher 1.0. Contact: my@email.com"
+    ]
+}

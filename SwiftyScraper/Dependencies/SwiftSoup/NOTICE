@@ -1,0 +1,12 @@
+// NOTICE
+// Stanislav Novacek
+
+Source code for this software has been downloaded from https://github.com/scinfu/SwiftSoup and copy-pasted with all files, including LICENCE, to a created Xcode project directory.
+Midifications made:
+- SwiftSoup.swift:11
+    (+) public final class SwiftSoup {
+- SwiftSoup.swift:246
+    (+) }
+To make public functions accessible via `SwiftSoup` namespace.
+
+// END NOTICE

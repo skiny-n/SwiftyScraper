@@ -1,0 +1,73 @@
+/**
+Scraping configuration (JSON with comments - multi-line and single-line).
+Don't nest multi-line comments inside each other.
+*/
+{
+    /** Maximum number of parallel workers.
+        Int. */
+    "workerLimit": 5,
+    /** Maximum number of requests per worker.
+        After reaching this number the worker dies and a new one is born so proxies and user agents can refresh.
+        Int.
+        */
+    "workerRequestLimit": 10,
+    /** Crawling depth limit (up -> down).
+        Set `0` for unlimited. */
+    "depthLimit": 0,
+    /** Maximum number of crawled URLs (pages, images, etc.).
+        Set `0` for unlimited. */
+    "urlCountLimit": 0,
+    /** Path to a file with proxies.
+        See `./proxies.json` for more info.
+        String, optional. */
+    "proxyListPath": "./Resources/proxies.json",
+    /** Path to a file with user agents.
+        See `./user_agents.json` for more info.
+        String, optional. */
+    "userAgentListPath": "./Resources/user_agents.json",
+    /** Path to a file with referrers.
+        See `./referers.json` for more info.
+        String, optional. */
+    "refererListPath": "./Resources/referers.json",
+    /** URL filtering. */
+    "urlFilter": {
+        /** Regexes for URLs to exlude from crawl (login, logout, search links, etc.).
+            Array of string.*/
+        "exclude": [
+//            "website.com/users/.*",
+//            "website.com/.*?logout.*"
+        ]
+    },
+    /** Whether to honor robots.txt
+        Bool. */
+    "ignoreRobotsTXT": false,
+    /** Whether to parse and crawl a sitemap (if there's and available).
+        Bool. */
+    "ignoreSiteMap": false,
+    /** Delay between requests per worker.
+        This delay may wary slightly as randomization and throtling are mixed into final value.
+        Double. */
+    "requestDelay": 4.0,
+    /** Add a backoff that’s proportional to how long a site took to respond to previous request.
+        That way if a site gets overwhelmed and starts to slow down, next requests will automatically back off.
+        Bool. */
+    "requestThrottling": true,
+    /** Reuquest timeout.
+        Double.*/
+    "requestTimeout": 60.0,
+    /** Maximum number of single URL retries.
+        Int. */
+    "urlRetriesLimit": 3,
+    /** Authentication.
+        Currently only simple authentication is supported (but `cookie` may be used for session emulation as well).
+        Optional. */
+//    "authentication": {
+//        /** Username. String. */
+//        "username": "",
+//        /** Password. String. */
+//        "password": ""
+//    },
+    /** Cookies to send with every request.
+        String, optional. */
+    "cookies": null
+}
