@@ -97,6 +97,9 @@ Explore the `WeatherFetcher` example project to see how to implement the `Scrape
 ## Instalation
 Clone the repo and copy `SwiftyScraper` into your project.
 
+## Future improvements  
+- Implement an interactive scraper for JavaScript interpretation, injection and interactive HTML manipulation (backed by a Selenium process and a driver)
+
 ## Versions
 **1.0.0** - Current version
 
