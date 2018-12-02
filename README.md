@@ -48,11 +48,11 @@ When build with `DEBUG` configuration, there'll be a `log` directory created wit
 ## Architecture
 
 With decentralization in mind it is possible to built distributed crawlers and scrapers like this:  
-![Discributed scraper](doc/img/distributed_scraper.pdf)
+![Discributed scraper](doc/img/distributed_scraper.png)
 
 
 The basic overview of the architecture is something like this:
-![Architecture](doc/img/framework_architecture.pdf)
+![Architecture](doc/img/framework_architecture.png)
 
 
 The main idea is that a link scraper extracts all relevant links from an HTML, filtering is applied, URL entries are added to a URL frontier and responses with raw data are passed to the pipeline router. The router then passes this data to relevant pipelines (defined with `contentType` and `urlTemplate` vars).
@@ -99,9 +99,6 @@ Clone the repo and copy `SwiftyScraper` into your project.
 
 ## Versions
 **1.0.0** - Current version
-
-## Change log
-**1.0.0** - Initial commit
 
 # License
 MIT (except some dependencies)
