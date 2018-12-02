@@ -1,0 +1,8 @@
+// NOTICE
+// Stanislav Novacek
+
+Source code for this software has been downloaded from https://github.com/IBM-Swift/BlueSocket and copy-pasted with all files, including LICENCE, to a created Xcode project directory.
+Midifications made:
+- products's module namse has been changed to BlueSocket
+
+// END NOTICE

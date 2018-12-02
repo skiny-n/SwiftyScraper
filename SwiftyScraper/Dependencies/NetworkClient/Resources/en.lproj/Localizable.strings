@@ -1,0 +1,63 @@
+/* 
+  Localizable.strings
+  Networking
+
+  Created by Stanislav Novacek on 08/04/2018.
+  Copyright © 2018 Stanislav Novacek. All rights reserved.
+*/
+
+
+// MARK: Network errors (base localization)
+
+"networking.error.unknown" = "The action could not be completed"; // "An error has occured." take your pick
+
+"http.error.400" = "The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, size too large, invalid request message framing, or deceptive request routing).";
+"http.error.401" = "The user does not have the necessary credentials. Authentication is required and has failed or has not yet been provided.";
+"http.error.402" = "Payment Required.";
+"http.error.403" = "The request was valid, but the server is refusing action. The user might not have the necessary permissions for a resource, or may need an account of some sort.";
+"http.error.404" = "The requested resource could not be found but may be available in the future.";
+"http.error.405" = "A request method is not supported for the requested resource.";
+"http.error.406" = "The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.";
+"http.error.407" = "The client must first authenticate itself with the proxy.";
+"http.error.408" = "The server timed out waiting for the request.";
+"http.error.409" = "The request could not be processed because of conflict(s) in the request.";
+"http.error.410" = "The resource requested is no longer available and will not be available again.";
+"http.error.411" = "The request did not specify the length of its content, which is required by the requested resource.";
+"http.error.412" = "The server does not meet one of the preconditions that the requester put on the request.";
+"http.error.413" = "The request is larger than the server is willing or able to process.";
+"http.error.414" = "The URI provided was too long for the server to process.";
+"http.error.415" = "The request entity has a media type which the server or resource does not support.";
+"http.error.416" = "The client has asked for a portion of a resource that cannot be supplied.";
+"http.error.417" = "The server cannot meet the requirements of the Expect request-header field.";
+"http.error.418" = "I'm a teapot! Brew me some coffee bro.";
+"http.error.421" = "The request was directed at a server that is not able to produce a response.";
+"http.error.422" = "The request was well-formed but was unable to be followed due to semantic errors.";
+"http.error.423" = "The resource that is being accessed is locked.";
+"http.error.424" = "The request failed because it depended on another request and that request failed.";
+"http.error.426" = "The client should switch to a different protocol such as TLS/1.0, given in the Upgrade header field.";
+"http.error.428" = "The origin server requires the request to be conditional.";
+"http.error.429" = "The user has sent too many requests in a given amount of time.";
+"http.error.431" = "The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.";
+"http.error.451" = "A server operator has received a legal demand to deny access to a resource or to a set of resources that includes the requested resource.";
+
+"http.error.500" = "Internal server error.";
+"http.error.501" = "The server either does not recognize the request method, or it lacks the ability to fulfil the request.";
+"http.error.502" = "The server was acting as a gateway or proxy and received an invalid response from the upstream server.";
+"http.error.503" = "The server is currently unavailable (because it is overloaded or down for maintenance).";
+"http.error.504" = "The server was acting as a gateway or proxy and did not receive a timely response from the upstream server.";
+"http.error.505" = "The server does not support the HTTP protocol version used in the request.";
+"http.error.506" = "Transparent content negotiation for the request results in a circular reference.";
+"http.error.507" = "The server is unable to store the representation needed to complete the request.";
+"http.error.508" = "The server detected an infinite loop while processing the request.";
+"http.error.510" = "Further extensions to the request are required for the server to fulfil it.";
+"http.error.511" = "The client needs to authenticate to gain network access.";
+
+"serialization.error.1" = "Given URL is invalid.";
+"serialization.error.2" = "Could not serialize parameters.";
+"serialization.error.3" = "Could not serialize body.";
+"serialization.error.4" = "Could not decode payload.";
+"serialization.error.5" = "Creating request failed.";
+"serialization.error.6" = "Request failed.";
+
+
+
